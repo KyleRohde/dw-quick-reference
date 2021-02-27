@@ -1,15 +1,17 @@
 import { Component, Input } from '@angular/core';
+import { MoveCard } from './move-card.service';
 
 @Component({
   selector: 'move-card',
-  templateUrl: './move-card.component.html'/*,
-  styleUrls: ['./move-card.component.css']*/
+  templateUrl: './move-card.component.html'
 })
 export class MoveCardComponent {
-    _data!: object;
-
-    @Input() ('data')
-    set data(data: object) {
-        this._data = data || {};
-    }
-}6
+  @Input()
+  data: MoveCard = new MoveCard({
+    title: 'Move',
+    description: 'Action',
+    type: 'ATR',
+    crit: 'Flawless',
+    success: 'Complete'
+  })
+}

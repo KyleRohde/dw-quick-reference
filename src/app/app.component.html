@@ -1,10 +1,12 @@
 <div class="container">
   <h1>Dungeon World</h1>
   <h2>Quick Reference Guide</h2>
-  <div class="row">
-    <button type="button" class="btn btn-primary">Classes</button>
+  <button type="button" (click)="toggleClasses()" class="btn btn-primary">Classes</button>
+  <div *ngIf="classesVisible" class="row">
+    <class-card *ngFor="let class of classes" [data]="class"></class-card>
   </div>
-  <div class="row">
-    <button type="button" class="btn btn-primary">Moves</button>
+  <button type="button" (click)="toggleMoves()" class="btn btn-primary">Moves</button>
+  <div *ngIf="movesVisible" class="row">
+    <move-card *ngFor="let move of moves" [data]="move"></move-card>
   </div>
 </div>
