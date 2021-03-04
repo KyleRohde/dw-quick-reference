@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MoveCard } from './move-card.service';
+import { MoveCard } from '../../objects/move-card.service';
 
 @Component({
   selector: 'move-card',
@@ -11,7 +11,16 @@ export class MoveCardComponent {
     title: 'Move',
     description: 'Action',
     type: 'ATR',
-    crit: 'Flawless',
-    success: 'Complete'
+    crit: {
+      description: 'Flawless',
+      options: []
+    },
+    success: {
+      description: 'Complete',
+      options: [
+        "Get hit",
+        "Reposition and deal less"
+      ]
+    }
   })
 }

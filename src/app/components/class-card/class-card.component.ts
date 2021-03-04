@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ClassCard } from './class-card.service';
+import { ClassCard } from '../../objects/class-card.service';
 
 @Component({
   selector: 'class-card',

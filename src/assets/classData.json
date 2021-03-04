@@ -1,0 +1,43 @@
+[
+    {
+        "title": "Barbarian",
+        "health": 8,
+        "damage": 10
+    },{
+        "title": "Bard",
+        "health": 6,
+        "damage": 6
+    },{
+        "title": "Cleric",
+        "health": 8,
+        "damage": 6
+    },{
+        "title": "Druid",
+        "health": 6,
+        "damage": 6
+    },{
+        "title": "Fighter",
+        "health": 10,
+        "damage": 10
+    },{
+        "title": "Immolator",
+        "health": 4,
+        "damage": 8
+    },{
+        "title": "Paladin",
+        "health": 10,
+        "damage": 10
+    },{
+        "title": "Ranger",
+        "health": 8,
+        "damage": 8
+    },{
+        "title": "Thief",
+        "health": 6,
+        "damage": 8
+    },{
+        "title": "Wizard",
+        "health": 4,
+        "damage": 4
+    }
+]

@@ -1,6 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { ClassCard } from './components/class-card/class-card.service';
-import { MoveCard } from './components/move-card/move-card.service';
+import { ClassCard } from './objects/class-card.service';
+import { MoveCard } from './objects/move-card.service';
+
+import * as classData from '../assets/classData.json';
+import * as moveData from '../assets/basicMoveData.json';
 
 @Component({
   selector: 'app-root',
@@ -8,29 +11,8 @@ import { MoveCard } from './components/move-card/move-card.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  classes: ClassCard[] = [
-    new ClassCard({
-      title: 'Barbarian',
-      health: 8,
-      damage: 10
-    }),
-    new ClassCard({
-      title: 'Bard',
-      health: 6,
-      damage: 6
-    })
-  ]
-
-  moves: MoveCard[] = [
-    new MoveCard({
-      title: 'Hack and Slash',
-      description: 'When you attack an enemy in melee',
-      type: 'STR',
-      crit: 'On a 10+, you deal your damage to the enemy and avoid their attack. At your option, you may choose to do +1d6 damage but expose yourself to the enemy’s attack.',
-      success: 'On a 7–9, you deal your damage to the enemy and the enemy makes an attack against you.'
-    })
-  ]
-
+  classes: ClassCard[] = (classData as any).default;
+  moves: MoveCard[] = (moveData as any).default;
   classesVisible: boolean = false;
   movesVisible: boolean = false;
 
@@ -40,5 +22,9 @@ export class AppComponent {
 
   toggleMoves() {
     this.movesVisible = !this.movesVisible;
+  }
+
+  constructor(){
+    console.log(this.classes, this.moves);
   }
 }

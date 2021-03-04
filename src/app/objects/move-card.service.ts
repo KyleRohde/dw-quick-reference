@@ -1,9 +1,11 @@
+import { Options } from "./options.service";
+
 export class MoveCard {
     title: string;
     description: string;
     type: string;
-    crit: string;
-    success: string;
+    crit: Options;
+    success: Options;
 
     constructor(data: any) {
         this.title = data.title;

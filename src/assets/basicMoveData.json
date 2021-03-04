@@ -1,0 +1,122 @@
+[
+    {
+        "title": "Hack and Slash",
+        "description": "When you attack an enemy in melee",
+        "type": "STR",
+        "crit": {
+            "description": "On a 10+, you deal your damage to the enemy",
+            "options": [
+                "Avoid their attack",
+                "Deal +1d6 damage but expose yourself to the enemy’s attack"
+            ]
+        },
+        "success": {
+            "description": "On a 7–9, you deal your damage to the enemy and the enemy makes an attack against you",
+            "options": []
+        }
+    },{
+        "title": "Volley",
+        "description": "When you take aim and shoot at an enemy at range",
+        "type": "DEX",
+        "crit": {
+            "description": "On a 10+, you have a clear shot—deal your damage",
+            "options": []
+        },
+        "success": {
+            "description": "On a 7–9, choose one (whichever you choose you deal your damage)",
+            "options": [
+                "You have to move to get the shot placing you in danger as described by the GM",
+                "You have to take what you can get: -1d6 damage",
+                "You have to take several shots, reducing your ammo by one"
+            ]
+        }
+    },{
+        "title": "Defy Danger",
+        "description": "When you act despite an imminent threat or suffer a calamity, say how you deal with it and roll. You can do so by:\n-powering through,\n-getting out of the way or acting fast,\n-enduring,\n-thinking quick\n-sheer mental fortitude\n-using charm and social grace",
+        "type": "STR, DEX, CON, INT, WIS, CHA",
+        "crit": {
+            "description": "On a 10+, you do what you set out to, the threat doesn’t come to bear",
+            "options": []
+        },
+        "success": {
+            "description": "On a 7–9, you stumble, hesitate, or flinch. The GM will offer you:",
+            "options": [
+                "A worse outcome",
+                "A hard bargain",
+                "An ugly choice"
+            ]
+        }
+    },{
+        "title": "Defend",
+        "description": "When you stand in defense of a person, item, or location under attack. As long as you stand in defense, when you or the thing you defend is attacked you may spend hold, 1 for 1, to choose an option",
+        "type": "CON",
+        "crit": {
+            "description": "On a 10+, hold 3",
+            "options": [
+                "Redirect an attack from the thing you defend to yourself",
+                "Halve the attack’s effect or damage",
+                "Open up the attacker to an ally giving that ally +1 forward against the attacker",
+                "Deal damage to the attacker equal to your level"
+            ]
+        },
+        "success": {
+            "description": "On a 7–9, hold 1",
+            "options": []
+        }
+    },{
+        "title": "Spout Lore",
+        "description": "When you consult your accumulated knowledge about something",
+        "type": "INT",
+        "crit": {
+            "description": "On a 10+, the GM will tell you something interesting and useful about the subject relevant to your situation",
+            "options": []
+        },
+        "success": {
+            "description": "On a 7–9, the GM will only tell you something interesting—it’s on you to make it useful",
+            "options": []
+        }
+    },{
+        "title": "Discern Realities",
+        "description": "When you closely study a situation or person. Take +1 forward when acting on the answer(s)",
+        "type": "WIS",
+        "crit": {
+            "description": "On a 10+, ask the GM 3 questions",
+            "options": [
+                "What happened here recently?",
+                "What is about to happen?",
+                "What should I be on the lookout for?",
+                "What here is useful or valuable to me?",
+                "Who’s really in control here?",
+                "What here is not what it appears to be?"
+            ]
+        },
+        "success": {
+            "description": "On a 7–9, ask 1 question",
+            "options": []
+        }
+    },{
+        "title": "Parley",
+        "description": "When you have leverage on a GM Character and manipulate them. Leverage is something they need or want",
+        "type": "CHA",
+        "crit": {
+            "description": "On a 10+, they do what you ask if you first promise what they ask of you",
+            "options": []
+        },
+        "success": {
+            "description": "On a 7–9, they will do what you ask, but need some concrete assurance of your promise, right now",
+            "options": []
+        }
+    },{
+        "title": "Aid or Interfere",
+        "description": "When you help or hinder someone",
+        "type": "BOND",
+        "crit": {
+            "description": "On a 10+, they take +1 or -2 to their roll, your choice",
+            "options": []
+        },
+        "success": {
+            "description": "On a 7–9, they still get a modifier, but you also expose yourself to danger, retribution, or cost",
+            "options": []
+        }
+    }
+]
