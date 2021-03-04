@@ -1,5 +1,8 @@
 <div class="container">
-    <button type="button" (click)="toggleClasses()" class="btn btn-primary">Classes</button>
+    <a routerLink="">Home</a>
+    <button type="button" (click)="toggleClasses()" class="btn btn-primary">
+        Classes
+    </button>
     <div *ngIf="classesVisible" class="row">
         <class-card *ngFor="let class of classes" [data]="class" class="col"></class-card>
     </div>
