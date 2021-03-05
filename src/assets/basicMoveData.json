@@ -4,7 +4,7 @@
         "description": "When you attack an enemy in melee",
         "type": "STR",
         "crit": {
-            "description": "On a 10+, you deal your damage to the enemy",
+            "description": "On a 10+, you deal your damage to the enemy and either:",
             "options": [
                 "Avoid their attack",
                 "Deal +1d6 damage but expose yourself to the enemy’s attack"
@@ -32,8 +32,8 @@
         }
     },{
         "title": "Defy Danger",
-        "description": "When you act despite an imminent threat or suffer a calamity, say how you deal with it and roll. You can do so by:\n-powering through,\n-getting out of the way or acting fast,\n-enduring,\n-thinking quick\n-sheer mental fortitude\n-using charm and social grace",
-        "type": "STR, DEX, CON, INT, WIS, CHA",
+        "description": "When you act despite an imminent threat or suffer a calamity, say how you deal with it and roll. You can do so by:<br />-powering through &nbsp;-getting out of the way or acting fast &nbsp;-enduring &nbsp;-thinking quick &nbsp;-sheer mental fortitude &nbsp;-using charm and social grace",
+        "type": "STR,&nbsp;DEX,&nbsp;CON, INT,&nbsp;WIS,&nbsp;CHA",
         "crit": {
             "description": "On a 10+, you do what you set out to, the threat doesn’t come to bear",
             "options": []

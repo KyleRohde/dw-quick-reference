@@ -7,9 +7,5 @@ import { ClassCard } from '../../objects/class-card.service';
 })
 export class ClassCardComponent {
   @Input()
-  data: ClassCard = new ClassCard({
-    title: 'Class',
-    health: 0,
-    damage: 0
-  });
+  data: ClassCard | undefined;
 }

@@ -1,9 +1,8 @@
 <div class="container">
-    <a routerLink="">Home</a>
     <button type="button" (click)="toggleMoves()" class="btn btn-primary">
-        Moves
+        Basic Moves
     </button>
     <div *ngIf="movesVisible" class="row">
-        <move-card *ngFor="let move of moves" [data]="move" class="col-5"></move-card>
+        <move-card *ngFor="let move of moves" [data]="move" class="col-6"></move-card>
     </div>
 </div>
