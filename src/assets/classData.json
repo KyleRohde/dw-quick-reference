@@ -2,42 +2,52 @@
     {
         "title": "Barbarian",
         "health": 8,
-        "damage": 10
+        "damage": 10,
+        "races": ["Elf", "Dwarf", "Halfling", "Human"]
     },{
         "title": "Bard",
         "health": 6,
-        "damage": 6
+        "damage": 6,
+        "races": ["Elf", "Human"]
     },{
         "title": "Cleric",
         "health": 8,
-        "damage": 6
+        "damage": 6,
+        "races": ["Dwarf", "Human"]
     },{
         "title": "Druid",
         "health": 6,
-        "damage": 6
+        "damage": 6,
+        "races": ["Elf", "Human", "Halfling"]
     },{
         "title": "Fighter",
         "health": 10,
-        "damage": 10
+        "damage": 10,
+        "races": ["Dwarf", "Elf", "Halfling", "Human"]
     },{
         "title": "Immolator",
         "health": 4,
-        "damage": 8
+        "damage": 8,
+        "races": ["Human", "Salamander"]
     },{
         "title": "Paladin",
         "health": 10,
-        "damage": 10
+        "damage": 10,
+        "races": ["Human"]
     },{
         "title": "Ranger",
         "health": 8,
-        "damage": 8
+        "damage": 8,
+        "races": ["Elf", "Human"]
     },{
         "title": "Thief",
         "health": 6,
-        "damage": 8
+        "damage": 8,
+        "races": ["Halfling", "Human"]
     },{
         "title": "Wizard",
         "health": 4,
-        "damage": 4
+        "damage": 4,
+        "races": ["Elf", "Human"]
     }
 ]

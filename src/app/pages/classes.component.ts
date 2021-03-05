@@ -6,7 +6,16 @@ import * as classData from '../../assets/classData.json';
 
 @Component({
     selector: 'classes-page',
-    templateUrl: './classes.component.html'
+    templateUrl: './classes.component.html',
+    styles: [`
+      .header > div {
+        font-weight: bold;
+        border-bottom: 1px solid #000000;
+      }
+      class-card {
+        margin-bottom: 8px;
+      }
+    `]
 })
 export class ClassesPage {
     classes: ClassCard[] = (classData as any).default;
