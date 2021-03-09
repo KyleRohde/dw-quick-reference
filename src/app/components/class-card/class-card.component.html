@@ -1,4 +1,6 @@
-<div class="col-3">{{ data?.title }}</div>
-<div class="col-3">{{ data?.health }} + Constitution</div>
-<div class="col-3">d{{ data?.damage }}</div>
-<div class="col-3"><span *ngFor="let race of data?.races">{{ race }},&nbsp;</span></div>
+<div class="row" (click)="selectDetails()">
+    <div class="col-3">{{ data?.title }}</div>
+    <div class="col-3">{{ data?.health }} + Constitution</div>
+    <div class="col-3">d{{ data?.damage }}</div>
+    <div class="col-3"><span *ngFor="let race of data?.races">{{ race }}, </span></div>
+</div>

@@ -12,16 +12,25 @@ import * as classData from '../../assets/classData.json';
         font-weight: bold;
         border-bottom: 1px solid #000000;
       }
-      class-card {
-        margin-bottom: 8px;
+      .entry {
+        padding: 2px 8px 6px 8px;
+      }
+      .entry:hover {
+        background: #dddddd;
       }
     `]
 })
 export class ClassesPage {
     classes: ClassCard[] = (classData as any).default;
-    classesVisible: boolean = false;
-  
-    toggleClasses() {
-      this.classesVisible = !this.classesVisible;
+    classDetails: string | undefined;
+    detailsOpen: string | undefined;
+
+    displayDetails(details: string[]){
+      this.classDetails = details.join('');
+      this.detailsOpen = "col-6";
+    }
+
+    constructor(){
+      this.detailsOpen = "col-12";
     }
 }

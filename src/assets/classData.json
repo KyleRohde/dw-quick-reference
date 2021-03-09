@@ -3,51 +3,73 @@
         "title": "Barbarian",
         "health": 8,
         "damage": 10,
-        "races": ["Elf", "Dwarf", "Halfling", "Human"]
+        "races": ["Dwarf", "Elf", "Halfling", "Human"],
+        "details": ["<h3>Starting Moves</h3><p>Choose one of these to start with:</p>",
+            "<h4>Full Plate And Packing Steel</h4><p>You ignore the clumsy tag on armor you wear.</p>",
+            "<h4>Unencumbered, Unharmed</h4><p>So long as you are below your load and neither wear armor nor carry a shield, take +1 armor.</p>",
+            "<h3>You start with these moves:</h3>",
+            "<h4>Outsider</h4><p>You and your people are not from around here. At the beginning of each session, the GM will ask you something about your homeland, why you left, or what you left behind. If you answer them, mark XP.</p>",
+            "<h4>The Upper Hand</h4><p>You take +1 ongoing to last breath rolls. When you take your last breath, on a 7–9 you make an offer to Death in return for your life. If Death accepts he will return you to life. If not, you die.</p>",
+            "<h4>What Are You Waiting For?</h4><p>When you cry out a challenge to your enemies, roll+Con. On a 10+ they treat you as the most obvious threat to be dealt with and ignore your companions, take +2 damage ongoing against them. On a 7–9 only a few (the weakest or most foolhardy among them) fall prey to your taunting.</p>",
+            "<h4>Herculean Appetites</h4>Others may content themselves with just a taste of wine, or dominion over a servant or two, but you want more. Choose two appetites. While pursuing one of your appetites if you would roll for a move, instead of rolling 2d6 you roll 1d6+1d8. If the d6 is the higher die of the pair, the GM will also introduce a complication or danger that comes about due to your heedless pursuits.<ul><li>Pure destruction</li><li>Power over others</li><li>Mortal pleasures</li><li>Conquest</li><li>Riches and property</li><li>Fame and glory</li></ul>",
+            "<h4>Musclebound</h4><p>While you wield a weapon it gains the forceful and messy tags.</p>",
+            "<h3>Alignment</h3><p>Choose an alignment:<p>",
+            "<h4>Neutral</h4><p>Teach someone the ways of your people.</p>",
+            "<h4>Chaotic</h4><p>Eschew a convention of the civilized world.</p>"
+        ]
     },{
         "title": "Bard",
         "health": 6,
         "damage": 6,
-        "races": ["Elf", "Human"]
+        "races": ["Elf", "Human"],
+        "details": []
     },{
         "title": "Cleric",
         "health": 8,
         "damage": 6,
-        "races": ["Dwarf", "Human"]
+        "races": ["Dwarf", "Human"],
+        "details": []
     },{
         "title": "Druid",
         "health": 6,
         "damage": 6,
-        "races": ["Elf", "Human", "Halfling"]
+        "races": ["Elf", "Halfling", "Human"],
+        "details": []
     },{
         "title": "Fighter",
         "health": 10,
         "damage": 10,
-        "races": ["Dwarf", "Elf", "Halfling", "Human"]
+        "races": ["Dwarf", "Elf", "Halfling", "Human"],
+        "details": []
     },{
         "title": "Immolator",
         "health": 4,
         "damage": 8,
-        "races": ["Human", "Salamander"]
+        "races": ["Human", "Salamander"],
+        "details": []
     },{
         "title": "Paladin",
         "health": 10,
         "damage": 10,
-        "races": ["Human"]
+        "races": ["Human"],
+        "details": []
     },{
         "title": "Ranger",
         "health": 8,
         "damage": 8,
-        "races": ["Elf", "Human"]
+        "races": ["Elf", "Human"],
+        "details": []
     },{
         "title": "Thief",
         "health": 6,
         "damage": 8,
-        "races": ["Halfling", "Human"]
+        "races": ["Halfling", "Human"],
+        "details": []
     },{
         "title": "Wizard",
         "health": 4,
         "damage": 4,
-        "races": ["Elf", "Human"]
+        "races": ["Elf", "Human"],
+        "details": []
     }
 ]

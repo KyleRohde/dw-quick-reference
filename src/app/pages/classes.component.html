@@ -1,14 +1,16 @@
 <div class="container">
-    <button type="button" (click)="toggleClasses()" class="btn btn-primary">
-        Classes
-    </button>
-    <div *ngIf="classesVisible">
-        <div class="row header">
-            <div class="col-3">Name</div>
-            <div class="col-3">Health</div>
-            <div class="col-3">Damage</div>
-            <div class="col-3">Races</div>
+    <div class="row">
+        <div [class]="detailsOpen">
+            <div class="row header">
+                <div class="col-3">Name</div>
+                <div class="col-3">Health</div>
+                <div class="col-3">Damage</div>
+                <div class="col-3">Races</div>
+            </div>
+            <div class="entry" *ngFor="let class of classes">
+                <class-card [data]="class" (detailEvent)="displayDetails($event)"></class-card>
+            </div>
         </div>
-        <class-card *ngFor="let class of classes" [data]="class" class="row"></class-card>
+        <div *ngIf="detailsOpen === 'col-6'" [class]="detailsOpen" [innerHTML]="classDetails"></div>
     </div>
 </div>
