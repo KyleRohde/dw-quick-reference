@@ -13,6 +13,11 @@ export class ClassCardComponent {
   detailEvent = new EventEmitter<string[]>();
 
   selectDetails(){
-    this.detailEvent.emit(this.data?.details);
+    let toEmit = [];
+    toEmit.push("<h2>- " + this.data?.title + " -</h2>");
+    for(let elem of this.data?.details ?? []){
+      toEmit.push(elem);
+    }
+    this.detailEvent.emit(toEmit);
   }
 }

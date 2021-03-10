@@ -11,6 +11,9 @@
                 <class-card [data]="class" (detailEvent)="displayDetails($event)"></class-card>
             </div>
         </div>
-        <div *ngIf="detailsOpen === 'col-6'" [class]="detailsOpen" [innerHTML]="classDetails"></div>
+        <div *ngIf="detailsOpen.includes('col-6')" [class]="detailsOpen">
+            <button (click)="closeDetails()">Close</button>
+            <div [innerHTML]="classDetails"></div>
+        </div>
     </div>
 </div>

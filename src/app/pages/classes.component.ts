@@ -13,24 +13,27 @@ import * as classData from '../../assets/classData.json';
         border-bottom: 1px solid #000000;
       }
       .entry {
-        padding: 2px 8px 6px 8px;
+        padding: 2px 0 6px 8px;
+        margin-left: -8px;
       }
       .entry:hover {
         background: #dddddd;
+        cursor: pointer;
       }
     `]
 })
 export class ClassesPage {
     classes: ClassCard[] = (classData as any).default;
     classDetails: string | undefined;
-    detailsOpen: string | undefined;
+    detailsOpen: string = "details col-12";
 
     displayDetails(details: string[]){
       this.classDetails = details.join('');
-      this.detailsOpen = "col-6";
+      this.detailsOpen = "details col-6";
     }
 
-    constructor(){
-      this.detailsOpen = "col-12";
+    closeDetails(){
+      this.classDetails = "";
+      this.detailsOpen = "details col-12";
     }
 }
