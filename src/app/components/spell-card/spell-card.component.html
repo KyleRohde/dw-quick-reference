@@ -1,0 +1,5 @@
+<div class="row">
+    <div class="col-6">{{ data?.name }}</div>
+    <div *ngFor="let tag of data?.tags">{{ tag }}, </div>
+</div>
+<p>{{ data?.description }}</p>

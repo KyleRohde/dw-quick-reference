@@ -1,0 +1,10 @@
+<div class="container">
+    <input type="text" placeholder="Filter" 
+        [ngModel]="filterString" (ngModelChange)="filterChange($event)" 
+    />
+    <div class="row">
+        <spell-card *ngFor="let spell of filteredSpellList" 
+            class="col-6" [data]="spell">
+        </spell-card>
+    </div>
+</div>
