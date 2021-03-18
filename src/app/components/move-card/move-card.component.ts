@@ -8,7 +8,6 @@ import { MoveCard } from '../../objects/move-card.service';
     .card {
       margin: 8px;
       padding: 8px;
-      height: 98%;
       border: 2px solid #000000;
       border-radius: 8px;
     }
@@ -19,9 +18,27 @@ import { MoveCard } from '../../objects/move-card.service';
       font-size: 1.2rem;
       text-align: right;
     }
+    .card > button {
+      border: 0px;
+      background-color: #fff;
+    }
+    .card > button p {
+      font-weight: bold;
+      border-bottom: 1px solid #000;
+      line-height: 0.1em;
+    }
+    .card > button span {
+      background:#fff;
+      padding:0 10px;
+    }
   `]
 })
 export class MoveCardComponent {
   @Input()
   data: MoveCard | undefined;
+  detailsOpen: boolean = false;
+
+  toggleDetails(){
+    this.detailsOpen = !this.detailsOpen;
+  }
 }

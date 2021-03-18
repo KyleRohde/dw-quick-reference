@@ -10,10 +10,13 @@ import * as moveData from '../../assets/basicMoveData.json';
     styles: []
 })
 export class MovesPage {
-    moves: MoveCard[] = (moveData as any).default;
+    moves: MoveCard[] = [];
     movesVisible: boolean = false;
 
-    toggleMoves() {
-        this.movesVisible = !this.movesVisible;
+    toggleMoves(value: any) {
+        if(value === 1){
+            this.moves = (moveData as any).default;
+            this.movesVisible = true;
+        }
     }
 }

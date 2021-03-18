@@ -5,7 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styles: [`
     h1 {
-      text-align: center;
+      width: fit-content;
+      margin: auto;
+      cursor: pointer;
     }
     h2 {
       text-align: center;

@@ -4,12 +4,15 @@
         <div class="col type" [innerHTML]="data?.type"></div>
     </div>
     <p [innerHTML]="data?.description"></p>
-    <p>{{ data?.crit?.description }}</p>
-    <ul *ngIf="data?.crit?.options?.length">
-        <li *ngFor="let option of data?.crit?.options">{{ option }}</li>
-    </ul>
-    <p>{{ data?.success?.description }}</p>
-    <ul *ngIf="data?.success?.options?.length">
-        <li *ngFor="let option of data?.success?.options">{{ option }}</li>
-    </ul>
+    <button (click)="toggleDetails()"><p><span>Show More</span></p></button>
+    <div *ngIf="detailsOpen">
+        <p>{{ data?.crit?.description }}</p>
+        <ul *ngIf="data?.crit?.options?.length">
+            <li *ngFor="let option of data?.crit?.options">{{ option }}</li>
+        </ul>
+        <p>{{ data?.success?.description }}</p>
+        <ul *ngIf="data?.success?.options?.length">
+            <li *ngFor="let option of data?.success?.options">{{ option }}</li>
+        </ul>
+    </div>
 </div>
