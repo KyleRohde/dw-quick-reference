@@ -1,0 +1,193 @@
+[
+    {
+        "title": "Last Breath",
+        "description": "When you’re dying you catch a glimpse of what lies beyond the Black Gates of Death’s Kingdom (the GM will describe it). Then roll (just roll, +nothing—yeah, Death doesn’t care how tough or cool you are)",
+        "type": "",
+        "crit": {
+            "description": "On a 10+, you’ve cheated Death—you’re in a bad spot but you’re still alive.",
+            "options": []
+        },
+        "success": {
+            "description": "On a 7–9, Death himself will offer you a bargain. Take it and stabilize or refuse and pass beyond the Black Gates into whatever fate awaits you.",
+            "options": []
+        }
+    },{
+        "title": "Encumbrance",
+        "description": "When you make a move while carrying weight you may be encumbered.",
+        "type": "",
+        "crit": {
+            "description": "If your weight carried is:",
+            "options": [
+                "Equal to or less than your load, you suffer no penalty",
+                "Less than or equal to your load+2, you take -1 ongoing until you lighten your burden",
+                "Greater than your load+2, you have a choice: drop at least 1 weight and roll at -1, or automatically fail"
+            ]
+        },
+        "success": {
+            "description": "",
+            "options": []
+        }
+    },{
+        "title": "Make Camp",
+        "description": "When you settle in to rest consume a ration. If you’re somewhere dangerous decide the watch order as well.",
+        "type": "",
+        "crit": {
+            "description": "If you have enough XP you may level up. When you wake from at least a few uninterrupted hours of sleep heal damage equal to half your max HP.",
+            "options": []
+        },
+        "success": {
+            "description": "",
+            "options": []
+        }
+    },{
+        "title": "Take Watch",
+        "description": "When you’re on watch and something approaches the camp",
+        "type": "WIS",
+        "crit": {
+            "description": "On a 10+, you’re able to wake the camp and prepare a response, everyone in the camp takes +1 forward.",
+            "options": []
+        },
+        "success": {
+            "description": "On a 7–9, you react just a moment too late; your companions in camp are awake but haven’t had time to prepare. They have weapons and armor but little else.",
+            "options": []
+        }
+    },{
+        "title": "Undertake a Perilous Journey",
+        "description": "When you travel through hostile territory, choose one member of the party to act as trailblazer, one to scout ahead, and one to be quartermaster.",
+        "type": "WIS",
+        "crit": {
+            "description": "On a 10+:",
+            "options": [
+                "The quartermaster reduces the number of rations required by one",
+                "The trailblazer reduces the amount of time it takes to reach your destination (the GM will say by how much)",
+                "The scout will spot any trouble quick enough to let you get the drop on it"
+            ]
+        },
+        "success": {
+            "description": "On a 7–9, each role performs their job as expected: the normal number of rations are consumed, the journey takes about as long as expected, no one gets the drop on you but you don’t get the drop on them either.",
+            "options": []
+        }
+    },{
+        "title": "End of Session",
+        "description": "When you reach the end of a session, choose one of your bonds that you feel is resolved (completely explored, no longer relevant, or otherwise). Ask the player of the character you have the bond with if they agree. If they do, mark XP and write a new bond with whomever you wish.",
+        "type": "",
+        "crit": {
+            "description": "Once bonds have been updated look at your alignment. If you fulfilled that alignment at least once this session, mark XP. Mark XP as a group for each of the following questions you answer 'yes' to:",
+            "options": [
+                "Did we learn something new and important about the world?",
+                "Did we overcome a notable monster or enemy?",
+                "Did we loot a memorable treasure?"
+            ]
+        },
+        "success": {
+            "description": "",
+            "options": []
+        }
+    },{
+        "title": "Level Up",
+        "description": "When you have downtime (hours or days) and XP equal to (or greater than) your current level+7, you can reflect on your experiences and hone your skills.",
+        "type": "",
+        "crit": {
+            "description": "",
+            "options": [
+                "Subtract your current level+7 from your XP.",
+                "Increase your level by 1.",
+                "Choose a new advanced move from your class.",
+                "If you are the wizard, you also get to add a new spell to your spellbook.",
+                "Choose one of your stats and increase it by 1 (this may change your modifier). Changing your Constitution increases your maximum and current HP. Ability scores can’t go higher than 18."
+            ]
+        },
+        "success": {
+            "description": "",
+            "options": []
+        }
+    },{
+        "title": "Carouse",
+        "description": "When you return triumphant and throw a big party, spend 100 coins and roll +1 for every extra 100 coins spent.",
+        "type": "",
+        "crit": {
+            "description": "On a 10+, choose 3. On a 7–9, choose 1. On a miss, you still choose one, but things get really out of hand (the GM will say how).",
+            "options": [
+                "You befriend a useful NPC.",
+                "You hear rumors of an opportunity.",
+                "You gain useful information.",
+                "You are not entangled, ensorcelled, or tricked."
+            ]
+        },
+        "success": {
+            "description": "You can only carouse when you return triumphant. That’s what draws the crowd of revelers to surround adventurers as they celebrate their latest haul. If you don’t proclaim your success or your failure, then who would want to party with you anyway?",
+            "options": []
+        }
+    },{
+        "title": "Supply",
+        "description": "When you go to buy something with gold on hand, if it’s something readily available in the settlement you’re in, you can buy it at market price. Otherwise, you'll need to do some searching.",
+        "type": "CHA",
+        "crit": {
+            "description": "On a 10+, you find what you’re looking for at a fair price.",
+            "options": []
+        },
+        "success": {
+            "description": "On a 7–9, you’ll have to pay more or settle for something that’s not exactly what you wanted, but close. The GM will tell you what your options are.",
+            "options": []
+        }
+    },{
+        "title": "Recover",
+        "description": "When you do nothing but rest in comfort and safety.",
+        "type": "",
+        "crit": {
+            "description": "After a day of rest you recover all your HP. After three days of rest you remove one debility of your choice. If you’re under the care of a healer (magical or otherwise) you heal a debility for every two days of rest instead.",
+            "options": []
+        },
+        "success": {
+            "description": "",
+            "options": []
+        }
+    },{
+        "title": "Recruit",
+        "description": "When you put out word that you’re looking to hire help",
+        "type": "",
+        "crit": {
+            "description": "You can improve your chances of finding someone skilled through the following:",
+            "options": [
+                "+1 if you make it known that your pay is generous",
+                "+1 if you make it known what you’re setting out to do",
+                "+1 if you make it known that they’ll get a share of whatever you find",
+                "+1 if you have a useful reputation around these parts"
+            ]
+        },
+        "success": {
+            "description": "On a 10+, you’ve got your pick of a number of skilled applicants, your choice who you hire, no penalty for not taking them along. On a 7–9, you’ll have to settle for someone close to what you want or turn them away. On a miss someone influential and ill-suited declares they’d like to come along (a foolhardy youth, a loose-cannon, or a veiled enemy, for example), bring them and take the consequences or turn them away.",
+            "options": [
+                "If you turn away applicants, you take -1 forward to recruit."
+            ]
+        }
+    },{
+        "title": "Outstanding Warrants",
+        "description": "When you return to a civilized place in which you’ve caused trouble before",
+        "type": "CHA",
+        "crit": {
+            "description": "On a 10+, word has spread of your deeds and everyone recognizes you. On a 7–9, as above, and the GM chooses a complication:",
+            "options": [
+                "The local constabulary has a warrant out for your arrest.",
+                "Someone has put a price on your head.",
+                "Someone important to you has been put in a bad spot as a result of your actions."
+            ]
+        },
+        "success": {
+            "description": "This move is only for places where you’ve caused trouble, not every patch of civilization you enter. Being publicly caught up in someone else’s trouble still triggers this move. Civilization generally means the villages, towns and cities of humans, elves, dwarves, and halflings but it can also apply to any relatively lawful establishment of monstrous species, such as orcs or goblins. If the PCs have stayed in a place as part of the community, it counts as civilization.",
+            "options": []
+        }
+    },{
+        "title": "Bolster",
+        "description": "When you spend your leisure time in study, meditation, or hard practice, you gain preparation.",
+        "type": "",
+        "crit": {
+            "description": "If you prepare for a week or more, take 1 preparation. If you prepare for a month or longer, take 3 instead.",
+            "options": []
+        },
+        "success": {
+            "description": "When your preparation pays off spend 1 preparation for +1 to any roll. You can only spend one preparation per roll.",
+            "options": []
+        }
+    }
+]

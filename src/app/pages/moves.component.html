@@ -1,8 +1,14 @@
 <div class="container">
+    <button (click)="toggleMoves(0)" class="btn btn-primary">
+        Close
+    </button>
     <button (click)="toggleMoves(1)" class="btn btn-primary">
         Basic Moves
     </button>
-    <div *ngIf="movesVisible" class="row">
+    <button (click)="toggleMoves(2)" class="btn btn-primary">
+        Special Moves
+    </button>
+    <div *ngIf="movesVisible > 0" class="row">
         <move-card *ngFor="let move of moves" [data]="move" class="col-6"></move-card>
     </div>
 </div>

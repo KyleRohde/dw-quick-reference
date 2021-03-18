@@ -4,7 +4,10 @@
         <div class="col type" [innerHTML]="data?.type"></div>
     </div>
     <p [innerHTML]="data?.description"></p>
-    <button (click)="toggleDetails()"><p><span>Show More</span></p></button>
+    <button (click)="toggleDetails()"><p>
+        <span *ngIf="!detailsOpen">Show More</span>
+        <span *ngIf="detailsOpen">Show Less</span>
+    </p></button>
     <div *ngIf="detailsOpen">
         <p>{{ data?.crit?.description }}</p>
         <ul *ngIf="data?.crit?.options?.length">

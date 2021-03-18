@@ -9,6 +9,9 @@ import { Component } from '@angular/core';
       margin: auto;
       cursor: pointer;
     }
+    h1:hover {
+      background-color: #eeeeee;
+    }
     h2 {
       text-align: center;
       margin-bottom: 48px;
